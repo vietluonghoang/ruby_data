@@ -1,0 +1,80 @@
+## Generic Offers parameter file
+generic_offers:
+  generic_offer:
+    display_offer:
+      params:
+        offer_id: id
+        store_name:
+      static_params:
+        lad: 0
+        tjdebug: true
+        currency_selector: 0
+        event: 0
+    convert_offer:
+      params:
+        id:
+        bid:
+        entity_id: id
+        offer_id: id
+        publisher_app_id:
+        store_name:
+      static_params:
+        locale: :en
+        entity_type: 'generic_offer'
+  device:
+    display_offer:
+      params:
+        ad_tracking_enabled:
+        advertising_id:
+        connection_type:
+        country_code:
+        device_location:
+        device_name:
+        device_type:
+        display_multiplier:
+        install_id:
+        language_code:
+        library_revision:
+        library_version:
+        os_version:
+        platform:
+        plugin:
+        publisher_user_id:
+        sdk_type:
+        session_id:
+        store_view:
+        threatmetrix_session_id:
+        timestamp:
+        udid:
+        verifier:
+    convert_offer:
+      params:
+        advertising_id:
+        connection_type:
+        country_code:
+        device_name:
+        device_type:
+        display_multiplier:
+        library_version:
+        os_version:
+        platform:
+        publisher_user_id:
+        session_id:
+        entity_source: source
+        udid:
+      static_params:
+        connection_subtype: ''
+        device_request: ''
+        raw_advertising_id: ''
+        source: 'offerwall'
+  app:
+    display_offer:
+      params: &app_display_offer_params
+        app_id: id
+        app_version: version
+        bridge_version:
+    convert_offer:
+      params: &app_convert_offer_params
+        <<: *app_display_offer_params
+        currency_id:
+        publisher_app_id: id

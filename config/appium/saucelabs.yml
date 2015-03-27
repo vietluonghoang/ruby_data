@@ -1,0 +1,5 @@
+saucelabs:
+  url: 'http://ondemand.saucelabs.com:80/wd/hub'
+  username: 'tapjoy'
+  access_key: '7277d9ae-fb10-4d5b-b1cf-06559668db36'
+  device_type: 'phone'

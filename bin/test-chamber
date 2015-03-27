@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'rake'
+require 'bundler/setup'
+
+gem_dir = File.expand_path("..",File.dirname(__FILE__))
+$LOAD_PATH.unshift gem_dir# Look in gem directory for resources first.
+Dir.chdir(gem_dir) # We'll load rakefile from the gem's dir.
+Rake.application.init
+Rake.application.load_rakefile
+Rake.application.invoke_task(ARGV[0])

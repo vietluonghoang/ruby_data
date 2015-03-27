@@ -1,0 +1,19 @@
+<script src="mraid.js"></script>
+<div class="celtra-ad-v3">
+    <!-- user.currencyAmount = raw TAPJOY_CURRENCY_AMOUNT -->
+    <!-- user.currencyName   = raw TAPJOY_CURRENCY_NAME -->
+    <img src="data:image/png,celtra" style="display: none" onerror="
+        (function(img) {
+            var params = {'placementId':'293b8503','clickUrl':'TAPJOY_GENERIC','clickEvent':'advertiser','externalAdServer':'TapJoy'};
+            [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w.]+)&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]] = decfs[m[2]](m[3].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } });
+            var req = document.createElement('script');
+            req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
+            params.clientTimestamp = new Date/1000;
+            req.src = (window.location.protocol == 'https:' ? 'https' : 'http') + '://ads.celtra.com/cd627fa0/mraid-ad.js?';
+            for (var k in params) {
+                req.src += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
+            }
+            img.parentNode.insertBefore(req, img.nextSibling);
+        })(this);
+    "/>
+</div>

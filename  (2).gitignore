@@ -1,0 +1,16 @@
+.bundle/*
+screenshot/**
+spec/reports
+.env
+.DS_Store
+.idea/*
+capybara-*.html
+logs/*
+.yardoc/*
+doc/*
+apps/*
+config/appium/appium.yml
+results/*
+.*.swp
+.*.swo
+*.gem

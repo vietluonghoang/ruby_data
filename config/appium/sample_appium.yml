@@ -1,0 +1,27 @@
+appium:
+  # The driver to use for appium.
+  # 'local', 'appthwack' or 'saucelabs'
+  driver: 'local'
+
+  # OS: 'android' or 'ios'
+  os: 'ios'
+
+  # version of ios or android
+  version: '7.1'
+
+  # Fully qualified name of the device.
+  # For an Android Emulator use 'Android Emulator'.
+  # For iOS, use the name of the device, e.g. 'iPhone 5s'.
+  # Appthwack requires branded name, e.g. 'Apple iPhone 5s'
+  device: 'iPhone 5s'
+
+  # Path to your APK or zipped iOS app bundle.
+  app_path: /Users/jcarr/src/test_chamber/apps/TapjoyEasyApp.zip
+
+  # The backend appium uses to automate Android. 'selendroid' or 'appium'.
+  # Selendroid is only needed for Android 2.2 and older.
+  backend: appium
+
+  # Udid of a real device to use for testing, attached to this computer.
+  # Not needed for appthwack.
+  # udid: 260442fd886151527062059cee134e6119c31764

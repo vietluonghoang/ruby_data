@@ -1,0 +1,12 @@
+tapjoyserver:
+  adapter:  mysql
+  database: tapjoy_tapinabox
+  username: root
+  password: Tapjoy123!
+
+eventservice:
+  adapter:  mysql
+  database: events
+  username: root
+  password: Tapjoy123!
+# host: is configed by the value in the TARGET_URL environment variable

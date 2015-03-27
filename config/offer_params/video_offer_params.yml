@@ -1,0 +1,95 @@
+## Video Offers parameter file
+video_offers:
+  video_offer:
+    display_offer:
+      params:
+        offer_id: id
+        store_name:
+      static_params:
+        tjdebug: true
+        currency_selector: 0
+    convert_offer:
+      params:
+        id:
+        bid:
+        entity_id: id
+        offer_id: id
+        publisher_app_id:
+        store_name:
+        video_complete_url:
+      static_params:
+        locale: :en
+        entity_type: video_offer
+  device:
+    display_offer:
+      params:
+        ad_tracking_enabled:
+        advertising_id:
+        carrier_country_code:
+        carrier_name:
+        connection_type:
+        connection_subtype:
+        country_code:
+        device_location:
+        device_manufacturer:
+        device_name:
+        device_type:
+        display_multiplier:
+        install_id:
+        language_code:
+        library_revision:
+        library_version:
+        mac_address:
+        mobile_country_code:
+        mobile_network_code:
+        open_udid:
+        os_version:
+        plugin:
+        publisher_user_id:
+        session_id:
+        screen_density:
+        screen_layout_size:
+        source:
+        store_view:
+        sdk_type:
+        threatmetrix_session_id:
+        timestamp:
+        udid:
+        verifier:
+      static_params:
+        hide_premium: false
+    convert_offer:
+      params:
+        advertising_id:
+        connection_type:
+        country_code:
+        device_name:
+        device_type:
+        display_multiplier:
+        library_version:
+        os_version:
+        platform:
+        publisher_user_id:
+        session_id:
+        entity_source: source
+        origin_source: source
+        udid:
+      static_params:
+        connection_subtype: ''
+        device_request: ''
+        raw_advertising_id: ''
+        source: 'offerwall'
+  app:
+    display_offer:
+      # Adding 'bridge_version' to these parameters will result in TJS returning an HTTP link
+      # as opposed to a tjvideo link.  Not sure why this is the case, but documenting either way
+      params: &app_display_offer_params
+        app_id: id
+        app_version: version
+        publisher_app_id: id
+        currency_id:
+        platform:
+        source:
+    convert_offer:
+      params: &app_convert_offer_params
+        <<: *app_display_offer_params
